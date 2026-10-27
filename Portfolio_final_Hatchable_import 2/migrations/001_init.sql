@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS nutrition_enquiries (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), name TEXT NOT NULL, email TEXT NOT NULL, goal TEXT NOT NULL, message TEXT, created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(), status TEXT NOT NULL DEFAULT 'new', source TEXT NOT NULL DEFAULT 'website')

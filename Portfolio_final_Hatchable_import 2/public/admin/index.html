@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin · Root & Nourish</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/"><span>r✳n</span><b>root & nourish<small>ADMIN PORTAL</small></b></a><a href="/" class="site-link">View website ↗</a></header>
+<main class="wrap">
+<section class="welcome"><div><p class="eyebrow">BUSINESS OVERVIEW</p><h1>Enquiry dashboard</h1><p class="muted">Review website enquiries, track follow-ups, and understand what prospective clients are asking for.</p></div><button id="refresh" class="primary">Refresh data ↻</button></section>
+<div id="alert" class="alert" role="status">Checking admin access…</div>
+<section class="stats" aria-label="Enquiry statistics"><article><span>Total enquiries</span><strong id="total">—</strong></article><article><span>New enquiries</span><strong id="new-count">—</strong></article><article><span>Contacted</span><strong id="contacted-count">—</strong></article><article><span>Converted</span><strong id="converted-count">—</strong></article></section>
+<section class="panel"><div class="panel-head"><div><h2>Website enquiries</h2><p class="muted">Latest 500 entries · personal information is visible to authorised admins only.</p></div><button id="export" class="secondary">Export CSV ↓</button></div>
+<div class="filters"><input id="search" type="search" placeholder="Search name, email, message…" aria-label="Search enquiries"><select id="status-filter" aria-label="Filter by status"><option value="all">All statuses</option><option value="new">New</option><option value="contacted">Contacted</option><option value="converted">Converted</option><option value="archived">Archived</option></select><select id="goal-filter" aria-label="Filter by enquiry topic"><option value="all">All topics</option><option>Personalised nutrition guidance</option><option>Meal planning</option><option>Building healthier habits</option><option>Something else</option></select></div>
+<div class="table-wrap"><table><thead><tr><th>Received</th><th>Name / Email</th><th>Interest</th><th>Message</th><th>Status</th><th>Actions</th></tr></thead><tbody id="rows"><tr><td colspan="6" class="empty">Loading enquiries…</td></tr></tbody></table></div><p id="result-count" class="muted count"></p></section>
+<p class="privacy-note">Privacy reminder: only collect information needed to respond to enquiries. Do not ask visitors for account passwords, payment details, or unnecessary medical records through this form.</p>
+</main>
+<script src="/admin/admin.js"></script>
+</body></html>
